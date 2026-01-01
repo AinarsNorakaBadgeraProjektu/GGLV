@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioWaveContainer>
+  <Version value="1" />
+  <ChunkIndices value="True" />
+  <Streams>
+    <Item>
+      <Name>charge</Name>
+      <FileName>charge.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="321000" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>chock</Name>
+      <FileName>chock.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="42300" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>codeblue</Name>
+      <FileName>codeblue.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="1731280" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>crashingflat</Name>
+      <FileName>crashingflat.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="1154560" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>flat</Name>
+      <FileName>flat.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="445440" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>inc</Name>
+      <FileName>inc.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="83200" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>norm</Name>
+      <FileName>norm.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="10240" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>nsrbeat</Name>
+      <FileName>nsrbeat.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="886" />
+          <SampleRate value="32000" />
+          <Headroom value="-100" />
+          <PlayBegin value="0" />
+          <PlayEnd value="0" />
+          <LoopBegin value="0" />
+          <LoopEnd value="0" />
+          <LoopPoint value="-1" />
+          <Peak unk="0" />
+        </Item>
+      </Chunks>
+    </Item>
+  </Streams>
+</AudioWaveContainer>

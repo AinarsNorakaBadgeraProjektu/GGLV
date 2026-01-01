@@ -1,0 +1,55 @@
+Loc['no'] = {
+    info = {
+        ['button'] = "[E] - ",
+        ["connecting"] = "Kobler til..",
+        ["smoke"] = "Kaster røykgranat under døren..",
+        ["planting_c4"] = "Planter C4..",
+        ["wires"] = "Kutter ledninger..",
+        ["typing_password"] = "Skriver inn passordet..",
+        ["install_virus"] = "Installer virus..",
+        ["accessing_keypad"] = "Tilgang til kodetastaturet..",
+        ["waiting_player"] = "Venter på at den andre personen skal trykke på knappen...",
+        ["obtaining_code"] = "Få datamaskinpassord..",
+        ["searching"] = "Søker..",
+        ["hack_status"] = "Du deaktiverte %s/%s sikringsskap",
+        ["decrypt_password"] = "Dekrypterer passord..",
+        ["cracking"] = "Åpner opp boksen..",
+        ["strike_update"] = "%s feil, på %s feil, vil øverste sikkerhetsnivå vil bli varslet",
+        ["striked"] = "%s feil, toppsikkerhetsnivå ble varslet",
+        ["grab"] = "Ta ",
+    },
+
+    error = {
+        ["failed"] = "Du mislyktes",
+        ["missing_item"] = "Du mangler en gjenstand",
+        ["enough_cops"] = "Kan ikke gjøre dette på nåværende tidspunkt",
+        ["used"] = "Noen har allerede gjort dette",
+        ["initiate_robbery"] = "Du har ikke startet ranet ennå!",
+        ["level"] = "Dette virker veldig vanskelig for deg",
+        ["permission"] = "Du har ikke tillatelse til å bruke denne",
+        ["glitch"] = "Godt forsøk",
+        ["missing_bag"] = "Du mangler en pose eller sekk!",
+        ["missing_keycard"] = "Du har kun en av to nøkkelkort!",
+        ["not_smoked"] = "Du må røyke ut vaktene først!",
+        ["cooldown"] = "Du må vente litt før du gjør dette igjen!",
+    },
+
+    success = {
+        ["lasers_down"] = "Noen lasere ble deaktivert",
+        ["bonus_item"] = "Du fant en bonusgjenstand!",
+        ["unlocked_keypad"] = "Tilgang godkjent",
+        ["code_found"] = "Du fant en kode",
+        ["cut_wires"] = "Du klarte å kutte ledningene!",
+        ["installed"] = "Installert vellykket!",
+        ["door_unlocked"] = "Døren er låst opp!",
+        ["smoked"] = "Røykgranat er utplassert!",
+        ["installed_virus"] = "Virus installert!",
+        ["item_found"] = "Du fant en gjenstand!",
+        ["accessible"] = "Sikkerhetstastaturet er nå tilgjengelig",
+        ["found_password"] = "Du fant et passord",
+        ["unlocked_crate"] = "Du låste opp en kasse",
+    },
+}
+
+-- Everything was translated by Project X Team translator Airbourne/TheAirbourne7!
+-- Corrections done by terrydiaz

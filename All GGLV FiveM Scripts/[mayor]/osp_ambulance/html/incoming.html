@@ -1,0 +1,108 @@
+<html>
+    <head>
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="incomingWrapper">
+                <div class="title">
+                    <h1 id="incoming">TERMINAL</h1>
+                </div>
+                <div class="box extraroom">
+                    <span class="standard">NAME:</span> <span id="name">N/A</span>
+                    <br> 
+                    <span class="standard">SEX:</span> <span id="sex">N/A</span>
+                    <br>
+                    <span class="standard">AGE:</span> <span id="age">N/A</span>
+                </div>
+                <div class="box">
+                    <span class="standard">CONDITION:</span> <span class="condition" id="condition">N/A</span>
+                </div>
+                <div class="box">
+                    <span class="standard">ETA:</span> <span id="eta">N/A</span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+<style>
+    body{
+        font-family: "Roboto";
+    }
+    .incomingWrapper{
+        background-color: rgb(40, 56, 90);
+        width: 800px;
+        height: 500px;
+    }
+
+    .title{
+        height:115px;
+    }
+
+    h1{
+        position: absolute;
+        text-align: center;
+        font-size: 75px;
+        letter-spacing: 2px; 
+        margin-left: 200px;
+        margin-top: 25px;
+        color: white;
+    }
+
+    .box{
+        width:670px;
+        height: 50px;
+        border: solid 0px;
+        margin-left: 50px;
+        margin-top: 15px;
+        color: white;
+        font-size: 30px;
+        padding-top:15px;
+        padding-left: 30px;
+        background-color: rgb(28, 38, 59);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+    }
+
+    .extraroom{
+        line-height: 45px;
+        height:150px;
+    }
+
+    .condition{
+        color: white;
+    }
+    .standard{
+        color: rgb(168, 175, 214);
+    }
+
+
+    .blue{
+        width: 800px;
+        height: 500px;
+        background-color: blue;
+    }
+
+
+    h2{
+        padding-top: 150px;
+        color: white;
+        text-align: center;
+        font-size: 125px;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    p{
+        margin-top: -75px;
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+</style>
+<script src="incoming.js" type="text/javascript"></script>
+</html>

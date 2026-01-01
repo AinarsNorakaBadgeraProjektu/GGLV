@@ -1,0 +1,10 @@
+/* Here you can adjust NUI colors */
+/* DONT CHANGE COLOR FORMAT! It's must stay as 3 numbers separated with spaces representing rgb format */
+
+:root {
+	--color-accent: 255 77 77;
+	--color-danger: 255 0 61;
+	--color-background-primary: 255, 26, 26;
+	--color-text-primary: 255 255 255;
+	--color-text-secondary: 255 106 79;
+}

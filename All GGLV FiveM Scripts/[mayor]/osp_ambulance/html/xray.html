@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <img class="img" src="">
+
+    </div>
+    
+</body>
+<style>
+    .wrapper{
+        background-color: black;
+        font-family: "Roboto";
+
+        width: 800px;
+        height: 500px;
+        color: white;
+        font-size: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+</style>
+<script>
+
+
+        
+    window.addEventListener("message", function(ev) {
+        const data = ev.data;
+        const wrapper = document.querySelector('.wrapper');
+        wrapper.innerHTML = '<img class="img" src="">';
+
+        const img = document.querySelector('.img');
+        if (data.data === 'Head') {
+            img.setAttribute('src', 'img/neck.png');
+        } else if (data.data === 'Torso') {
+            img.setAttribute('src', 'img/spine.png');
+        } else if (data.data === 'Larm' || data.data === 'Rarm') {
+            img.setAttribute('src', 'img/arm.png');
+        } else if (data.data === 'Lleg' || data.data === 'Rleg') {
+            img.setAttribute('src', 'img/leg.png');
+        } else if (data.data === 'none') {
+            const noDamageText = document.createElement('div');
+            noDamageText.textContent = "NO FRACTURES";
+            wrapper.appendChild(noDamageText);
+        } else if (data.data === 'splint') {
+            const noDamageText = document.createElement('div');
+            noDamageText.textContent = "REMOVE SPLINT";
+            wrapper.appendChild(noDamageText);
+        } 
+    });
+
+
+</script>
+</html>

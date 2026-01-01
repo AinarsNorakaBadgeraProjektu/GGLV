@@ -1,0 +1,292 @@
+{
+    "client": {
+        "target_buy_subscription": "Buy a $%s subscription", 
+        "modal_buy_subscription": "Are you sure you want to purchase a $%s for %s %s?",
+        "modal_mole_name": "Mole",
+        "target_buy_phone": "Buy Trap Phone $%s",
+        "modal_buy_phone": "Are you sure you want to purchase a Trap Phone for $%s?",
+        "phone_mole_buy_message": "'sup, I will keep you informed when Cops appear in my neighborhood. On the GPS, you have marked the area I cover.",
+        "notify_set_waypoint": "You have set your GPS",
+        "target_retail_sell_drugs": "Suggest drugs",
+        "notify_exit_vehicle": "You need to exit the Vehicle.",
+        "notify_wholesale_info": "You are very close to the meeting point, if you move away - you will cancel the meeting.",
+        "notify_wholesale_info2": "If you pull out any weapon within the meeting area with the client, he will perceive it as an attempt to scam.",
+        "notify_wholesale_fail_weapon": "The client took it as fraud. Your respect drops by %s.",
+        "target_wholesale_exchange": "Proceed with the exchange",
+        "notify_wholesale_fail_drug": "You don't have enough of the specified drug, the client took it as fraud. Your respect drops by %s.",
+        "notify_wholesale_fail_distance": "You canceled the meeting with the client, your respect drops by %s.",
+        "notify_wholesale_enemy_dead": "Take the money from the client before the police arrive.",
+        "target_wholesale_steal_money": "Steal the money",
+
+        "randomTexts": {
+            "phone_mole_message": [
+                "There's a pig patrolling the neighborhood, watch your back!",
+                "Heads up, there's a cop around, stay alert!",
+                "Be careful, there's a pig in the area, keep an eye out!",
+                "Watch out, there's a fuzz on the block, stay sharp!",
+                "Heads up, there's a five-o nearby, be on the lookout!"
+            ]
+        }
+    },
+    "server": {
+        "command_selldrugs_description": "Command responsible for enabling/disabling Drug Sales", 
+        "command_selldrugs_error": "The player with the given ID does not exist.",
+        "command_checkstats_description": "The command responsible for checking the drug sales statistics of a given player",
+        "command_checkstats_arg1_desc": "Player ID",
+        "command_checkstats_notify": "Checking: <span>%s</span>,<br><br> Respect: <span>%s</span>,<br> Sale Skill: <span>%s</span>,<br>Mole Junkie: %s<br>Mole Criminal: %s<br>Mole Professional: %s",
+        "command_checkstats_webhook_title": "Checking Player Statistics",
+        "command_checkstats_webhook_desc": "<@%s> (**%s, %s**) checks the player's statistics <@%s> (**%s, %s**).",
+        "command_addrespect_desc": "The command responsible for adding reputation points in selling drugs for a selected player",
+        "command_addrespect_notify": "Adds Respect: <span>%s</span>, <br><br>After adding, it has <span>%s</span> respect points.",
+        "command_addrespect_notify2": "The administrator has added respect points to you. After adding it, you have <span>%s</span> respect points.",
+        "command_addrespect_webhook_desc": "<@%s> (**%s, %s**) added %s respect points to <@%s> (**%s, %s**).",
+        "command_addrespect_arg2_desc": "Number of reputation points to add",
+        "command_removerespect_desc": "The command responsible for subtracting reputation points in selling drugs for a selected player",
+        "command_removerespect_notify": "Subtracts Respect: <span>%s</span>, <br><br>After subtraction, it has <span>%s</span> respect points.",
+        "command_removerespect_notify2": "The administrator has deducted your respect points. After deduction, you have <span>%s</span> respect points.",
+        "command_removerespect_webhook_desc": "<@%s> (**%s, %s**) has subtracted %s respect points from <@%s> (**%s, %s**).",
+        "command_removerespect_args2_desc": "The number of reputation points to be deducted",
+        "command_addskill_desc": "The command responsible for adding skill points in selling drugs for the selected player",
+        "command_addskill_notify": "Adds Skill Points: <span>%s</span>, <br><br>After adding, it has <span>%s</span> skill points.",
+        "command_addskill_notify2": "The administrator has added skill points to you. After adding them, you have <span>%s</span> skill points.",
+        "command_addskill_webhook_desc": "<@%s> (**%s, %s**) added %s skill points to player <@%s> (**%s, %s**).",
+        "command_addskill_arg2_desc": "Number of skill points to add",
+        "command_removeskill_desc": "The command responsible for subtracting skill points in selling drugs for the selected player",
+        "command_removeskill_notify": "Subtracts Skill Points: <span>%s</span>, <br><br>After subtraction, he has <span>%s</span> skill points.",
+        "command_removeskill_notify2": "The administrator has deducted your skill points. After subtraction, you have <span>%s</span> skill points.",
+        "command_removeskill_webhook_desc": "<@%s> (**%s, %s**) has subtracted %s skill points from <@%s> (**%s, %s**).",
+        "command_removeskill_arg2_desc": "Number of skill points to be subtracted",
+        "command_addMole_desc": "Command responsible for adding an observer for a selected player",
+        "command_addMole_notify": "Observer category <span>%s</span> does not exist.",
+        "command_addMole_notify2": "Follower <span>%s</span> does not exist in the specified category.",   
+        "command_addMole_notify3": "Adding Subscriptions: <span>%s</span>, <br><br>Received subscription from <span>%s</span>: <span>%s</span> valid until <span>%s</ span>.",
+        "command_addMole_notify4": "You have received a subscription to <span>%s</span>: <span>%s</span> from the Administrator. Valid until <span>%s</span>.",
+        "command_addMole_webhook_desc": "<@%s> (**%s, %s**) added a subscription to %s: %s player <@%s> (**%s, %s**).",
+        "command_addMole_arg2_desc": "The Observer type can be found in config.lua",
+        "command_addMole_arg3_desc": "The name of the Observer can be found in config.lua",
+        "command_removeMole_notify": "The <span>%s</span> observer category does not exist.",
+        "command_removeMole_notify2": "The player does not have this Follower: <span>%s</span>.",
+        "command_removeMole_notify3": "Deleting Subscriptions: <span>%s</span>, <br><br>Lost subscription to <span>%s</span>: <span>%s</span>.",
+        "command_removeMole_notify4": "The administrator has canceled your subscription to <span>%s</span>: <span>%s</span>.",
+        "command_removeMole_webhook_desc": "<@%s> (**%s, %s**) removed %s' subscription: %s player <@%s> (**%s, %s**).",
+        "command_removeMole_desc": "Command responsible for removing an observer for a selected player",
+        "notify_subscription_ends": "Your subscription to <span>%s</span> has just expired.",
+        "notify_wholesale_time": "The stranger <span>%s</span> will not wait for you any longer and has withdrawn his offer. Your stats have been subtracted.",
+        "notify_mole_error_police": "You cannot purchase a subscription as an Officer.",
+        "notify_mole_success": "You purchased a subscription from <span>%s</span> to <span>%s</span>. He will inform you about officers in his area via Trap Phone.",
+        "mole_buy_webhook_title": "Subscriptions",
+        "mole_buy_webhook_desc": "<@%s> (**%s, %s**) purchased a subscription from %s: %s valid until %s.",
+        "mole_buy_notify": "You don't have enough cash on you, you are missing <span>$%s</span>.",
+        "mole_buy_notify2": "Your respect is too low, you are missing <span>%s</span>.",
+        "mole_buy_notify3": "You have an active subscription from <span>%s</span> to <span>%s</span>.",
+        "notify_traphone_error_police": "You cannot purchase Trap Phone as an Officer.",
+        "notify_traphone_success": "You purchased Trap Phone for <span>$%s</span>.",
+        "traphone_buy_webhook_desc": "<@%s> (**%s, %s**) purchased Trap Phone.",
+        "traphone_buy_notify": "You don't have enough cash on you, you are missing <span>$%s</span>.",
+        "print_retail_status": "Invalid format: %s, number/playerId required!",
+        "print_retail_status2": "The player you specified %s is unavailable or you cannot perform this via RCON.",
+        "notify_retail_status": "Not enough policemen to start a retail business, lack of <span>%s</span>.",
+        "notify_retail_status2": "You don't have any drugs.",
+        "notify_retail_status3": "You started selling drugs. Find potential customers.",
+        "notify_retail_status4": "You stopped selling drugs.",
+        "notify_retail_police": "Not enough policemen to continue retail sales, lack of <span>%s</span>.",
+        "notify_retail_error": "You do not have the drug on offer.",
+        "notify_retail_error2": "You don't have that much of the drug on offer.",
+        "notify_retail_error3": "You offered the same or higher amount.",
+        "notify_retail_sell_success": "You successfully sold <span>%s</span> for <span>$%s</span>.",
+        "retail_sell_webhook_title": "Retail",
+        "retail_sell_webhook_desc": "<@%s> (**%s, %s**) sold %s for $%s.",
+        "notify_wholesale": "You've arrived at your destination, head towards the customer.",
+        "notify_wholesale2": "You moved away from the meeting place, it was canceled and your statistics were deducted.",
+        "wholesale_webhook_title": "Wholesale",
+        "wholesale_webhook_desc": "<@%s> (**%s, %s**) wandered too far from the meeting point with %s.",
+        "notify_wholesale3": "You attacked an unknown merchant, your potential customers will probably find out about it. Your stats have been subtracted.",
+        "wholesale_webhook_desc2": "<@%s> (**%s, %s**) attacked %s at a meeting.",
+        "notify_wholesale4": "The customer took the <span>$%s</span> you had with you.",
+        "wholesale_webhook_desc3": "<@%s> (**%s, %s**) was robbed by %s for $%s.",
+        "notify_wholesale5": "You stole <span>$%s</span> from a customer, run away before the officers get here!",
+        "wholesale_webhook_desc4": "<@%s> (**%s, %s**) robbed %s of $%s.",
+        "notify_wholesale6": "You don't have the offered drug on you, you've wasted the customer's time. Your stats have been subtracted.",
+        "notify_wholesale7": "You don't have enough of the offered drug on you, you've wasted the customer's time. Your stats have been subtracted.",
+        "notify_wholesale8": "You successfully sold <span>%s</span> for <span>$%s</span>.",
+        "wholesale_webhook_desc5": "<@%s> (**%s, %s**) sold %s for %s.",   
+        
+        "randomTexts": {
+            "phone_mole_first_message": [
+                "Hey, I'm operating in %s. I'll keep you posted if any pigs show up in the %s area. Watch your back.",
+                "Yo, I'm working in %s. I'll let you know if any pigs show up around %s. Stay alert.",
+                "Hi, I'm on %s. I'll inform you if any pigs are seen in %s. Keep an eye out.",
+                "Hey, I'm in %s. I'll update you if any pigs appear in the %s neighborhood. Be careful.",
+                "What's up, I'm at %s. I'll give you a heads-up if any pigs are spotted in the %s area. Stay safe."
+            ]
+        }
+    },
+    "html": {
+        "dialog_inventory_title": "EQUIPMENT",
+        "phone_messages_title": "Messages",
+        "phone_ogApp_title": "OG App",
+        "phone_settings_title": "Settings",
+        "phone_ogApp_respect_title": "Respect",
+        "phone_ogApp_selling_skill_title": "Selling Skill",
+        "phone_ogApp_active_subscriptions_title": "Active Subscriptions",
+        "phone_setting_alerts": "Alerts",
+        "phone_setting_alerts_sound": "Alerts Sound",
+        "dialog_respect_tooltip": "Respect: %s / %s",
+        "dialog_sales_skill_tooltip": "Sales skills: %s / %s",
+        "dialog_stranger_title": "STRANGER",
+        "notify_input_wrong": "Please enter a valid value.",
+        "notify_inventory_select": "Select an item from your inventory",
+        "phone_call_stranger_title": "Stranger #%s",
+        "phone_call_message_end": "Started a conversation that lasted %s seconds",
+        "phone_message_input_drug_amount": "Enter how much...",
+        "phone_message_input_price": "Set your price per unit...",
+        "phone_alert_player": "You: %s",
+        "notify_settings_error": "You must wait 5 seconds before changing the settings again.",
+
+        "randomTexts": {
+            "dialog_answer_sale_offer": [
+                "I have for sale: %s"
+            ],
+            "dialog_npc_first_message": [
+                "What do you want?",
+                "What are you looking for?",
+                "How may I assist you at this moment?"
+            ],
+            "dialog_npc_take": [
+                "Okay, I'll take %s pieces of %s. How much do you want for one quantity?",
+                "Alright, I'd like to order %s units of %s. What's the price per unit?",
+                "I'll go for %s pieces of %s. Can you tell me the cost for each?"
+            ],
+            "dialog_answer_start_normal": [
+                "Are you up for an adventure?",
+                "Are you in the mood for something exciting?",
+                "Interested in trying something new and thrilling?"
+            ],
+            "dialog_answer_start_exit": [
+                "Just passing through, thank you.",
+                "Actually, I think I'll pass this time, thanks.",
+                "I've reconsidered – maybe some other time. Thank you."
+            ],
+            "dialog_npc_whatYouHave": [
+                "What goods do you have to offer today?",
+                "Can you show me what items are available for purchase right now?",
+                "I'm curious about your current selection. What's on offer today?"
+            ],
+            "dialog_answer_whatYouHave_exit": [
+                "On second thought, I have nothing right now.",
+                "Actually, upon rethinking, I currently don’t have anything to offer.",
+                "I’ve just realized that I don't have any items available at the moment."
+            ],
+            "dialog_answer_iWillTake_write": [
+                "Set your price per unit...",
+                "The price per item is...",
+                "Each unit will cost you..."
+            ],
+            "dialog_answer_iWillTake_normal": [
+                "Let me show you something else.",
+                "How about I introduce you to another one of our products?",
+                "Maybe you'd be interested in seeing a different item we have?"
+            ],
+            "dialog_answer_iWillTake_exit": [
+                "I've changed my mind, not selling it today.",
+                "Actually, I won't be selling it today.",
+                "Decided not to sell today."
+            ],
+            "dialog_npc_giveMeBetterOption": [
+                "Give me a better price, this one doesn't suit me.",
+                "This price seems a bit high. Can you do any better?",
+                "I'm looking for a more reasonable price. Can we negotiate?"
+            ],
+            "dialog_npc_noThanks": [
+                "I'll pass on that, doesn't seem like a good deal.",
+                "I think I'll decline, the price doesn't work for me.",
+                "No thanks, the deal isn't quite what I'm looking for."
+            ],
+            "dialog_answer_noThanks_exit": [
+                "Your loss, maybe next time.",
+                "That's a shame. Hopefully, we can do business in the future.",
+                "Sorry to hear that. Let's keep the possibility open for another time."
+            ],
+            "dialog_npc_sellSuccess": [
+                "I'm interested in your offer. Let's make a deal.",
+                "This sounds good to me. I'd like to proceed with the deal.",
+                "I agree to these terms. Let's finalize the deal."
+            ],
+            "dialog_answer_sellSuccess_normal": [
+                "Great, pleasure doing business with you.",
+                "Excellent, I'm glad we could come to an agreement.",
+                "Fantastic, it's been a pleasure arranging this with you."
+            ],
+            "dialog_npc_sellFail": [
+                "That price doesn't work for me. No deal.",
+                "I can't agree to that price. We don't have a deal.",
+                "The price is too high for me. I'll have to pass."
+            ],
+            "dialog_answer_exit": [
+                "Too bad, maybe another time.",
+                "Sorry we couldn't make it work. Perhaps in the future.",
+                "Understood, hope we can do business some other time."
+            ],
+            "phone_message_accept_offer": [
+                "Okay, I'll take %s quantities.",
+                "Alright, I'm in for %s units.",
+                "I agree to purchase %s amounts."
+            ],
+            "phone_message_gps": [
+                "Show up here.",
+                "Meet me at this location.",
+                "Come to the given address."
+            ],
+            "phone_message_no_places": [
+                "However, we won't make a deal, something went wrong on my side.",
+                "Unfortunately, I have to back out of this deal, there's been an issue on my end.",
+                "I've had a change of plans and can't proceed with the deal, sorry for the inconvenience."
+            ],
+            "phone_message_drug_amount": [
+                "I have %s quantities.",
+                "My stock is %s units.",
+                "I'm holding %s quantities right now."
+            ],
+            "phone_message_drug_amount_fail": [
+                "You're funny, kid, thinking I'd need that much.",
+                "You must be joking with that amount.",
+                "That's a good one, but let's be serious about the quantity."
+            ],
+            "phone_message_price_question": [
+                "How much do you want for one quantity?",
+                "What's the price per unit?",
+                "Can you tell me the cost for each quantity?"
+            ],
+            "phone_message_price_answer": [
+                "$%s for one quantity.",
+                "The price for each quantity is $%s.",
+                "Each unit will cost you $%s."
+            ],
+            "phone_message_call": [
+                "Okay, call me for more information.",
+                "Alright, give me a call if there's more to discuss.",
+                "Sounds good. Please phone me for further details."
+            ],
+            "phone_message_price_fail": [
+                "At that price? I think we're done here.",
+                "This price is a deal-breaker for me. Goodbye.",
+                "No way I'm paying that much. This conversation is over."
+            ],
+            "phone_message_price_negotiation": [
+                "This price doesn’t work for me - give me a better offer.",
+                "I’m not paying that much. Show me a better deal.",
+                "The price doesn’t work for me — you’ll have to do better than that."
+            ],
+            "phone_message_price_no_req": [
+                "Actually, I’ve changed my mind. Sorry for the trouble.",
+                "On second thought, I’ll pass. Apologies.",
+                "You know what? Forget it. Didn’t mean to waste your time."
+            ],
+            "phone_message_price_lower_before": [
+                "That’s more than what you said earlier. You messing with me? Get lost.",
+                "You just raised the price? Seriously? Don’t screw with me — I’m out.",
+                "You think this is funny? Price went up? Piss off."
+            ]    
+        }
+    }
+}

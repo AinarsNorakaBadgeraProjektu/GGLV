@@ -1,0 +1,93 @@
+{
+    "target": {
+        "interact": "Talk with the hunter",
+        "skin": "Skin",
+        "use_stove": "Use stove",
+        "grab_stove": "Grab stove"
+    },
+    "notify": {
+        "no_money": "You don't have enough money to buy this item.",
+        "item_bought": "Item bought!",
+        "cant_carry": "You can't carry this item.",
+        "no_item": "You don't have enough of that item!",
+        "alr_skinned": "Animal already skinned!",
+        "no_xp_skin": "You need more XP to skin this animal",
+        "skin_success": "You've skinned the animal and won %s XP!",
+        "no_knife": "You need a knife to do this dumbass...",
+        "stove_out": "You already have an stove out!",
+        "stove_has_items": "This stove still has items inside it...",
+        "sold_items": "You sold every hunting item on you!",
+        "no_items_sell": "You don't have anything to sell..."
+    },
+    "blip": {
+        "shop": "Hunting shop"
+    },
+    "progress": {
+        "skining": "Skinning animal...",
+        "placing_stove": "Placing stove...",
+        "grabing_stove": "Grabing stove...",
+        "eating": "Eating..."
+    },
+    "textui": {
+        "place_commands": "[ENTER] Confirm  \n[BACKSPACE] Cancel  \n[SCROLLUP] Left rotation    \n[SCROLLDOWN] Right rotation"
+    },
+    "inventory": {
+        "stove_label": "Hunting stove",
+        "cooked": "%s Cooked"
+    },
+    "logs": {
+        "animal_skinned":"%s skinned an animal and received %sx %s, %sx %s and %sXP being now with %sXP"
+    },
+    "ui": {
+        "buy_tab": "Buy stuff",
+        "sell_tab": "Sell stuff",
+        "tournament_tab": "Tournaments",
+        "leaderboard_tab": "Leaderboard",
+        "close_button": "Close",
+        "leaderboard_header": "Hunting leaderboard",
+        "xp": "XP",
+        "place": "Place",
+        "hunter": "Hunter",
+        "totalanimals": "Total animals killed",
+        "no_xp_players": "No players with XP yet",
+        "sell_header": "Hunting sell shop",
+        "sell": "Sell",
+        "quantity": "Quantity",
+        "choose_quantity": "Choose the quantity you want to sell",
+        "sell_all": "Sell all items",
+        "cofirm_all": "Confirm all items sell",
+        "confirm_all_desc": "You are sure you want to sell all meat and skin in your inventory?",
+        "confirm_sell": "Confirm sell",
+        "cancel": "Cancel",
+        "dollar": "$",
+        "shop_header": "Hunting shop",
+        "choose_quantity_shop": "Choose the quantity you want to buy",
+        "purchase": "Purchase",
+        "tournament_header": "Hunting tournaments",
+        "tournament_leaderboard": "Tournaments leaderboard",
+        "no_leader_players": "No player qualified for the tournament yet",
+        "tournament_info": "Tournament information",
+        "days_left": "Days left",
+        "tournament_description_head": "Tournament description",
+        "tournament_description": "Hunt the maximum amount of animals you can, focus on high level XP animals and compete with other hunters to win incredible prizes every week!",
+        "tournament_progress": "Your tournament progress",
+        "animals": "Animals",
+        "tournament_personal_history": "Your tournament history",
+        "wins": "Total wins",
+        "total_animals": "Total animals",
+        "total_xp": "Total XP",
+        "tournament_history": "Tournaments history",
+        "id": "ID",
+        "winner": "Winner",
+        "prize": "Prize",
+        "startdate": "Start date",
+        "enddate": "End date",
+        "no_history": "No tournaments history yet",
+        "species_tab": "Species",
+        "species_header": "Animals species",
+        "ilegal": "Ilegal",
+        "legal": "Legal",
+        "zones_tab": "Zones map",
+        "map_header": "Hunting zones map"
+    }
+}

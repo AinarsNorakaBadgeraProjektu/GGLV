@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movable and Resizable Div with Scalable Images</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 32px;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid dodgerblue;
+            border-radius: 5px;
+            box-shadow: 0 15px 15px lightgrey;
+            position: relative; /* Add relative position for dragging */
+            resize: both;
+            overflow: hidden;
+        }
+
+        .box-header {
+            color: #fff;
+            background-color: dodgerblue;
+            padding: 10px 15px;
+        }
+
+        .box-body {
+            padding: 15px;
+        }
+
+        .drag-handle {
+            cursor: pointer;
+        }
+
+        .dragging {
+            cursor: move !important;
+        }
+
+        .ondmgSkelly {
+            position: relative;
+            width: 20vh;
+            height: 20vh;
+            border: 1px solid black;
+        }
+
+        .ondmgSkelly img {
+            position: absolute;
+            width: 100%; /* Adjust width based on the container */
+            height: auto;
+            max-width: 100%; /* Ensure images do not overflow */
+            max-height: 100%; /* Ensure images do not overflow */
+        }
+
+        .body2 { top: 0; left: 0; }
+        .head2 { top: 10px; left: 10px; }
+        .torso2 { top: 60px; left: 10px; }
+        .rarm2 { top: 60px; left: 80px; }
+        .larm2 { top: 60px; left: -20px; }
+        .rleg2 { top: 120px; left: 10px; }
+        .lleg2 { top: 120px; left: 50px; }
+    </style>
+</head>
+<body>
+    <div class="box" data-draggable="true" data-resizable="true">
+        <div class="box-header drag-handle" data-drag-handle="true">Drag here</div>
+        <div class="box-body">Draggable and resizable box
+            <div class="ondmgSkelly">
+                <img class="body2" src="img/background.png" alt="Body">
+                <img class="head2" src="img/head.png" alt="Head">
+                <img class="torso2" src="img/torso.png" alt="Torso">
+                <img class="rarm2" src="img/arm_right.png" alt="Right Arm">
+                <img class="larm2" src="img/arm_left.png" alt="Left Arm">
+                <img class="rleg2" src="img/leg_right.png" alt="Right Leg">
+                <img class="lleg2" src="img/leg_left.png" alt="Left Leg">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let dragEl;
+        let dragHandleEl;
+        const lastPosition = {};
+
+        setupResizable();
+        setupDraggable();
+
+        function setupDraggable() {
+            dragHandleEl = document.querySelector('[data-drag-handle]');
+            dragHandleEl.addEventListener('mousedown', dragStart);
+            dragHandleEl.addEventListener('mouseup', dragEnd);
+            dragHandleEl.addEventListener('mouseout', dragEnd);
+        }
+
+        function setupResizable() {
+            const resizeEl = document.querySelector('[data-resizable]');
+            resizeEl.style.setProperty('resize', 'both');
+            resizeEl.style.setProperty('overflow', 'hidden');
+        }
+
+        function dragStart(event) {
+            dragEl = getDraggableAncestor(event.target);
+            dragEl.style.setProperty('position', 'absolute');
+            lastPosition.left = event.clientX;
+            lastPosition.top = event.clientY;
+            dragHandleEl.classList.add('dragging');
+            dragHandleEl.addEventListener('mousemove', dragMove);
+        }
+
+        function dragMove(event) {
+            const dragElRect = dragEl.getBoundingClientRect();
+            const newLeft = dragElRect.left + event.clientX - lastPosition.left;
+            const newTop = dragElRect.top + event.clientY - lastPosition.top;
+            dragEl.style.setProperty('left', `${newLeft}px`);
+            dragEl.style.setProperty('top', `${newTop}px`);
+            lastPosition.left = event.clientX;
+            lastPosition.top = event.clientY;
+            window.getSelection().removeAllRanges();
+        }
+
+        function getDraggableAncestor(element) {
+            if (element.getAttribute('data-draggable')) return element;
+            return getDraggableAncestor(element.parentElement);
+        }
+
+        function dragEnd() {
+            dragHandleEl.classList.remove('dragging');
+            dragHandleEl.removeEventListener('mousemove', dragMove);
+            dragEl = null;
+        }
+    </script>
+</body>
+</html>

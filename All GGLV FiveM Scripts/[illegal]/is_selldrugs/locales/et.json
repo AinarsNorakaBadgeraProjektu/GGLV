@@ -1,0 +1,289 @@
+{
+  "client": {
+    "target_buy_subscription": "Ostke $%s tellimus",
+    "modal_buy_subscription": "Kas olete kindel, et soovite osta $%s hinnaga %s %s?",
+    "modal_mole_name": "Sünnimärk",
+    "target_buy_phone": "Ostke Trap Phone $%s",
+    "modal_buy_phone": "Kas olete kindel, et soovite osta Trap Phone'i hinnaga $%s?",
+    "phone_mole_buy_message": "'sup, ma hoian teid kursis, kui politseinikud mu naabruskonda ilmuvad. ",
+    "notify_set_waypoint": "Olete oma GPS-i seadistanud",
+    "target_retail_sell_drugs": "Soovitage ravimeid",
+    "notify_exit_vehicle": "Peate sõidukist väljuma.",
+    "notify_wholesale_info": "Oled kohtumispunktile väga lähedal, kui kolid ära – jätad koosoleku ära.",
+    "notify_wholesale_info2": "Kui võtate kliendiga kohtumisalal välja relva, tajub ta seda kelmuse katsena.",
+    "notify_wholesale_fail_weapon": "Klient võttis seda pettusena. ",
+    "target_wholesale_exchange": "Jätkake vahetust",
+    "notify_wholesale_fail_drug": "Teil ei piisa nimetatud ravimist, klient võttis seda pettusena. ",
+    "notify_wholesale_fail_distance": "Tühistasite kohtumise kliendiga, teie lugupidamine langeb %s võrra.",
+    "notify_wholesale_enemy_dead": "Võtke kliendilt raha enne politsei saabumist.",
+    "target_wholesale_steal_money": "Varasta raha",
+    "randomTexts": {
+      "phone_mole_message": [
+        "Ümbruskonnas patrullib siga, valvake selga!",
+        "Ettevaatust, läheduses on politseinik, olge valvel!",
+        "Olge ettevaatlik, piirkonnas on siga, hoidke silm peal!",
+        "Ettevaatust, klotsil on udu, olge terav!",
+        "Tähelepanu, läheduses on viisteist, olge valvel!"
+      ]
+    }
+  },
+  "server": {
+    "command_selldrugs_description": "Narkootikumide müügi lubamise/keelamise eest vastutav käsk",
+    "command_selldrugs_error": "Antud ID-ga mängijat pole olemas.",
+    "command_checkstats_description": "Käsk, mis vastutab antud mängija ravimimüügi statistika kontrollimise eest",
+    "command_checkstats_arg1_desc": "Mängija ID",
+    "command_checkstats_notify": "Kontrollimine: <span>%s</span>,<br><br> Austus: <span>%s</span>,<br> Müügioskus: <span>%s</span>,<br>Mutt Junkie: %s<br>Mutt Kurjategija: %s<br>Mole Professional: %s",
+    "command_checkstats_webhook_title": "Mängija statistika kontrollimine",
+    "command_checkstats_webhook_desc": "<@%s> (**%s, %s**) kontrollib mängija statistikat <@%s> (**%s, %s**).",
+    "command_addrespect_desc": "Käsk, mis vastutab valitud mängija jaoks narkootikumide müümisel mainepunktide lisamise eest",
+    "command_addrespect_notify": "Lisab austust: <span>%s</span>, <br><br>Pärast lisamist on see olemas <span>%s</span> austuspunktid.",
+    "command_addrespect_notify2": "Administraator on teile lisanud austuspunkte.  <span>%s</span> austuspunktid.",
+    "command_addrespect_webhook_desc": "<@%s> (**%s, %s**) lisas %s austuspunkti <@%s> (**%s, %s**).",
+    "command_addrespect_arg2_desc": "Lisatavate mainepunktide arv",
+    "command_removerespect_desc": "Käsk, mis vastutab valitud mängija mainepunktide mahaarvamise eest narkootikumide müümisel",
+    "command_removerespect_notify": "Lahutab austust: <span>%s</span>, <br><br>Pärast lahutamist on see olemas <span>%s</span> austuspunktid.",
+    "command_removerespect_notify2": "Administraator on teie lugupidamispunktid maha arvanud.  <span>%s</span> austuspunktid.",
+    "command_removerespect_webhook_desc": "<@%s> (**%s, %s**) on sellest lahutanud %s austuspunkti <@%s> (**%s, %s**).",
+    "command_removerespect_args2_desc": "Mahaarvatavate mainepunktide arv",
+    "command_addskill_desc": "Käsk, mis vastutab valitud mängijale narkootikumide müümisel oskuspunktide lisamise eest",
+    "command_addskill_notify": "Lisab oskuspunkte: <span>%s</span>, <br><br>Pärast lisamist on see olemas <span>%s</span> oskuspunktid.",
+    "command_addskill_notify2": "Administraator on lisanud teile oskuspunkte.  <span>%s</span> oskuspunktid.",
+    "command_addskill_webhook_desc": "<@%s> (**%s, %s**) lisas mängijale %s oskuspunkti <@%s> (**%s, %s**).",
+    "command_addskill_arg2_desc": "Lisatavate oskuspunktide arv",
+    "command_removeskill_desc": "Käsk, mis vastutab valitud mängijale narkootikumide müümisel oskuspunktide mahaarvamise eest",
+    "command_removeskill_notify": "Lahutab oskuspunktid: <span>%s</span>, <br><br>Pärast lahutamist on tal <span>%s</span> oskuspunktid.",
+    "command_removeskill_notify2": "Administraator on teie oskuspunktid maha arvanud.  <span>%s</span> oskuspunktid.",
+    "command_removeskill_webhook_desc": "<@%s> (**%s, %s**) on %s oskuspunktidest lahutanud <@%s> (**%s, %s**).",
+    "command_removeskill_arg2_desc": "Lahutatavate oskuspunktide arv",
+    "command_addMole_desc": "Käsk, mis vastutab valitud mängija vaatleja lisamise eest",
+    "command_addMole_notify": "Vaatleja kategooria <span>%s</span> ei eksisteeri.",
+    "command_addMole_notify2": "Jälgija <span>%s</span> ei eksisteeri määratud kategoorias.",
+    "command_addMole_notify3": "Tellimuste lisamine: <span>%s</span>, <br><br>Tellimuse vastu võetud <span>%s</span>: <span>%s</span> kehtiv kuni <span>%s</ span>.",
+    "command_addMole_notify4": "Olete saanud tellimuse <span>%s</span>: <span>%s</span> administraatorilt.  <span>%s</span>.",
+    "command_addMole_webhook_desc": "<@%s> (**%s, %s**) lisas tellimuse %s: %s mängijale <@%s> (**%s, %s**).",
+    "command_addMole_arg2_desc": "Vaatleja tüübi leiate saidilt config.lua",
+    "command_addMole_arg3_desc": "Vaatleja nime leiate saidilt config.lua",
+    "command_removeMole_notify": "The <span>%s</span> vaatleja kategooriat ei eksisteeri.",
+    "command_removeMole_notify2": "Mängijal pole seda jälgijat: <span>%s</span>.",
+    "command_removeMole_notify3": "Tellimuste kustutamine: <span>%s</span>, <br><br>Kaotasid tellimus <span>%s</span>: <span>%s</span>.",
+    "command_removeMole_notify4": "Administraator on teie tellimuse tühistanud <span>%s</span>: <span>%s</span>.",
+    "command_removeMole_webhook_desc": "<@%s> (**%s, %s**) eemaldas kasutaja %s tellimuse: %s mängija <@%s> (**%s, %s**).",
+    "command_removeMole_desc": "Käsk, kes vastutab valitud mängija vaatleja eemaldamise eest",
+    "notify_subscription_ends": "Teie tellimus <span>%s</span> on just aegunud.",
+    "notify_wholesale_time": "Võõras <span>%s</span> ei oota sind enam ja on oma pakkumise tagasi võtnud. ",
+    "notify_mole_error_police": "Te ei saa ametnikuna tellimust osta.",
+    "notify_mole_success": "Ostsite tellimuse aadressilt <span>%s</span> juurde <span>%s</span>. ",
+    "mole_buy_webhook_title": "Tellimused",
+    "mole_buy_webhook_desc": "<@%s> (**%s, %s**) ostis tellimuse ettevõttelt %s: %s kehtib kuni %s.",
+    "mole_buy_notify": "Sul ei ole piisavalt sularaha, sa oled kadunud <span>$%s</span>.",
+    "mole_buy_notify2": "Teie austus on liiga madal, olete puudu <span>%s</span>.",
+    "mole_buy_notify3": "Teil on aktiivne tellimus alates <span>%s</span> juurde <span>%s</span>.",
+    "notify_traphone_error_police": "Trap Phone'i ei saa ohvitserina osta.",
+    "notify_traphone_success": "Ostsite Trap Phone'i jaoks <span>$%s</span>.",
+    "traphone_buy_webhook_desc": "<@%s> (**%s, %s**) ostis Trap Phone.",
+    "traphone_buy_notify": "Sul ei ole piisavalt sularaha, sa oled kadunud <span>$%s</span>.",
+    "print_retail_status": "Kehtetu vorming: %s, vajalik number/mängija ID!",
+    "print_retail_status2": "Teie määratud mängija %s pole saadaval või te ei saa seda teha RCON-i kaudu.",
+    "notify_retail_status": "Pole piisavalt politseinikke jaekaubanduse alustamiseks, puudus <span>%s</span>.",
+    "notify_retail_status2": "Sul ei ole mingeid ravimeid.",
+    "notify_retail_status3": "Hakkasite narkootikume müüma. ",
+    "notify_retail_status4": "Sa lõpetasid narkootikumide müümise.",
+    "notify_retail_police": "Pole piisavalt politseinikke jaemüügi jätkamiseks, puudus <span>%s</span>.",
+    "notify_retail_error": "Teil pole seda ravimit pakkuda.",
+    "notify_retail_error2": "Teil ei ole nii palju ravimit pakkuda.",
+    "notify_retail_error3": "Pakkusite sama või suuremat summat.",
+    "notify_retail_sell_success": "Müüsite edukalt <span>%s</span> jaoks <span>$%s</span>.",
+    "retail_sell_webhook_title": "Jaekaubandus",
+    "retail_sell_webhook_desc": "<@%s> (**%s, %s**) müüs %s hinnaga $%s.",
+    "notify_wholesale": "Jõudsite sihtkohta, suunduge kliendi poole.",
+    "notify_wholesale2": "Kolisite kohtumispaigast ära, see tühistati ja teie statistika võeti maha.",
+    "wholesale_webhook_title": "Hulgimüük",
+    "wholesale_webhook_desc": "<@%s> (**%s, %s**) rändas koos %s-iga kohtumiskohast liiga kaugele.",
+    "notify_wholesale3": "Ründasite tundmatut kaupmeest, tõenäoliselt saavad sellest teada teie potentsiaalsed kliendid. ",
+    "wholesale_webhook_desc2": "<@%s> (**%s, %s**) ründas koosolekul %s.",
+    "notify_wholesale4": "Klient võttis <span>$%s</span> sul oli kaasas.",
+    "wholesale_webhook_desc3": "<@%s> (**%s, %s**) röövis %s $%s eest.",
+    "notify_wholesale5": "Sa varastasid <span>$%s</span> kliendi käest, põgene enne, kui ohvitserid siia jõuavad!",
+    "wholesale_webhook_desc4": "<@%s> (**%s, %s**) röövis %s $%s.",
+    "notify_wholesale6": "Sul pole pakutavat ravimit seljas, oled raisanud kliendi aega. ",
+    "notify_wholesale7": "Sul ei ole piisavalt pakutavat ravimit seljas, oled raisanud kliendi aega. ",
+    "notify_wholesale8": "Müüsite edukalt <span>%s</span> jaoks <span>$%s</span>.",
+    "wholesale_webhook_desc5": "<@%s> (**%s, %s**) müüs %s hinnaga %s.",
+    "randomTexts": {
+      "phone_mole_first_message": [
+        "Hei, ma tegutsen asukohas %s. ",
+        "Oh, ma töötan asukohas %s. ",
+        "Tere, olen teenuses %s. ",
+        "Tere, ma olen asukohas %s. ",
+        "Mis lahti, olen asukohas %s. "
+      ]
+    }
+  },
+  "html": {
+    "dialog_inventory_title": "SEADMED",
+    "phone_messages_title": "Sõnumid",
+    "phone_ogApp_title": "OG rakendus",
+    "phone_settings_title": "Seaded",
+    "phone_ogApp_respect_title": "Respekt",
+    "phone_ogApp_selling_skill_title": "Müügioskus",
+    "phone_ogApp_active_subscriptions_title": "Aktiivsed tellimused",
+    "phone_setting_alerts": "Märguanded",
+    "phone_setting_alerts_sound": "Hoiatuste heli",
+    "dialog_respect_tooltip": "Austus: %s / %s",
+    "dialog_sales_skill_tooltip": "Müügioskused: %s / %s",
+    "dialog_stranger_title": "VÕÕRAS",
+    "notify_input_wrong": "Sisestage kehtiv väärtus.",
+    "notify_inventory_select": "Valige oma laost üksus",
+    "phone_call_stranger_title": "Võõras",
+    "phone_call_message_end": "Alustas vestlust, mis kestis %s sekundit",
+    "phone_message_input_drug_amount": "Sisesta kui palju...",
+    "phone_message_input_price": "Määrake oma ühiku hind...",
+    "phone_alert_player": "Sina: %s",
+    "notify_settings_error": "Enne seadete uuesti muutmist peate ootama 5 sekundit.",
+    "randomTexts": {
+      "dialog_answer_sale_offer": [
+        "Mul on müügis: %s"
+      ],
+      "dialog_npc_first_message": [
+        "Mida sa tahad?",
+        "Mida sa otsid?",
+        "Kuidas saan teid praegu aidata?"
+      ],
+      "dialog_npc_take": [
+        "Olgu, ma võtan %s tükki %s. ",
+        "Olgu, ma soovin tellida %s ühikut %s. ",
+        "Ma otsin %s tükki %s. "
+      ],
+      "dialog_answer_start_normal": [
+        "Kas olete valmis seikluseks?",
+        "Kas sul on tuju millekski põnevaks?",
+        "Kas olete huvitatud millegi uue ja põneva proovimisest?"
+      ],
+      "dialog_answer_start_exit": [
+        "Just läbin, tänan.",
+        "Tegelikult ma arvan, et see aeg möödub, aitäh.",
+        "Olen ümber mõelnud – võib-olla mõni teine ​​kord. "
+      ],
+      "dialog_npc_whatYouHave": [
+        "Mis kaupa sul täna pakkuda on?",
+        "Kas saate mulle näidata, milliseid esemeid on praegu võimalik osta?",
+        "Mind huvitab teie praegune valik. "
+      ],
+      "dialog_answer_whatYouHave_exit": [
+        "Kui järele mõelda, siis mul pole praegu midagi.",
+        "Tegelikult ei ole mul praegu ümbermõeldes midagi pakkuda.",
+        "Sain just aru, et mul pole hetkel ühtegi kaupa saadaval."
+      ],
+      "dialog_answer_iWillTake_write": [
+        "Määrake oma ühiku hind...",
+        "Kauba hind on...",
+        "Iga üksus maksab teile..."
+      ],
+      "dialog_answer_iWillTake_normal": [
+        "Las ma näitan sulle midagi muud.",
+        "Kuidas oleks, kui tutvustaksin teile veel üht meie toodet?",
+        "Võib-olla oleksite huvitatud mõne teistsuguse toote nägemisest?"
+      ],
+      "dialog_answer_iWillTake_exit": [
+        "Olen meelt muutnud, täna ei müü.",
+        "Tegelikult ma seda täna ei müü.",
+        "Otsustasin täna mitte müüa."
+      ],
+      "dialog_npc_giveMeBetterOption": [
+        "Paku parem hind, see mulle ei sobi.",
+        "See hind tundub veidi kõrge. ",
+        "Otsin mõistlikumat hinda. "
+      ],
+      "dialog_npc_noThanks": [
+        "Ma annan selle edasi, see ei tundu hea tehing.",
+        "Ma arvan, et ma keeldun, hind ei sobi mulle.",
+        "Ei, tänan, tehing pole päris see, mida ma otsin."
+      ],
+      "dialog_answer_noThanks_exit": [
+        "Teie kaotus, võib-olla järgmisel korral.",
+        "Sellest on kahju. ",
+        "Kahju seda kuulda. "
+      ],
+      "dialog_npc_sellSuccess": [
+        "Olen teie pakkumisest huvitatud. ",
+        "See kõlab mulle hästi. ",
+        "Nõustun nende tingimustega. "
+      ],
+      "dialog_answer_sellSuccess_normal": [
+        "Suurepärane, rõõm teiega äri teha.",
+        "Suurepärane, mul on hea meel, et jõudsime kokkuleppele.",
+        "Fantastiline, mul on olnud rõõm seda teiega korraldada."
+      ],
+      "dialog_npc_sellFail": [
+        "Minu jaoks see hind ei sobi. ",
+        "Ma ei saa selle hinnaga nõustuda. ",
+        "Hind on minu jaoks liiga kõrge. "
+      ],
+      "dialog_answer_exit": [
+        "Kahju, võib-olla mõni teine ​​kord.",
+        "Kahjuks me ei saanud seda tööle panna. ",
+        "Arusaadav, loodan, et saame teinekord äri ajada."
+      ],
+      "phone_message_accept_offer": [
+        "Olgu, ma võtan %s kogust.",
+        "Olgu, ma ootan %s ühikut.",
+        "Nõustun ostma %s summas."
+      ],
+      "phone_message_gps": [
+        "Näidake siia.",
+        "Kohtume selles kohas.",
+        "Tule antud aadressile."
+      ],
+      "phone_message_no_places": [
+        "Kuid me ei tee tehingut, minu poolel läks midagi valesti.",
+        "Kahjuks pean sellest tehingust taganema, minuga on tekkinud probleem.",
+        "Mul on plaanid muutunud ja ma ei saa tehinguga jätkata. Vabandame ebamugavuste pärast."
+      ],
+      "phone_message_drug_amount": [
+        "Mul on %s kogust.",
+        "Minu laos on %s ühikut.",
+        "Mul on praegu %s kogust."
+      ],
+      "phone_message_drug_amount_fail": [
+        "Sa oled naljakas, poiss, mõeldes, et mul on nii palju vaja.",
+        "Sa vist teed selle summaga nalja.",
+        "See on hea, kuid olgem koguse suhtes tõsiseltvõetavad."
+      ],
+      "phone_message_price_question": [
+        "Kui palju soovite ühe koguse eest?",
+        "Mis on ühiku hind?",
+        "Kas saate mulle öelda iga koguse maksumuse?"
+      ],
+      "phone_message_price_answer": [
+        "$%s ühe koguse eest.",
+        "Iga koguse hind on $%s.",
+        "Iga üksus maksab teile %s $."
+      ],
+      "phone_message_call": [
+        "Olgu, lisateabe saamiseks helistage mulle.",
+        "Olgu, helistage mulle, kui on veel midagi arutada.",
+        "Kõlab hästi. "
+      ],
+      "phone_message_price_fail": [
+        "Selle hinnaga? ",
+        "See hind on minu jaoks rikkuja. ",
+        "Ma ei maksa mingil juhul nii palju. "
+      ],
+      "phone_message_price_negotiation": [
+        "See hind ei sobi mulle – tee parem pakkumine.",
+        "Liiga kallis. Kas saad midagi paremat pakkuda?",
+        "Hind ei sobi – mis on sinu parim pakkumine?"
+      ],
+      "phone_message_price_no_req": [
+          "Tegelikult ma mõtlesin ümber. Vabandan vaeva pärast.",
+          "Teisel mõttel – ma loobun. Andeks.",
+          "Tead mis? Unusta ära. Ei tahtnud su aega raisata."
+      ],
+      "phone_message_price_lower_before": [
+          "See on rohkem kui enne ütlesid. Teed nalja või? Kao siit.",
+          "Tõstsid just hinda? Tõsiselt? Ära mängi minuga.",
+          "Arvad, et see on naljakas? Hind tõusis? Kao minema."
+      ]
+    }
+  }
+}

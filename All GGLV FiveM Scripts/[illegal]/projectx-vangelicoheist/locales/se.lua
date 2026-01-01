@@ -1,0 +1,45 @@
+Loc['se'] = {
+    info = {
+        ['button'] = "[E] - ",
+        ["connecting"] = "Ansluter..",
+        ["searching"] = "Letar igenom dokumenten..",
+        ["smoke"] = "Kastar granat ner i ventilation..",
+        ["planting_c4"] = "Plantera C4..",
+        ["wires"] = "Klipper några kablar..",
+        ["typing_password"] = "Skriver in lösenordet..",
+        ["install_virus"] = "Installerar virus.",
+        ["accessing_keypad"] = "Får åtkomst till kodpanelen..",
+        ["waiting_player"] = "Väntar på att en andra persone ska trycka på andra knappen..",
+        ["display"] = "Tar..",
+    },
+
+    error = {
+        ["failed"] = "Du misslyckades",
+        ["missing_item"] = "Du saknar ett föremål",
+        ["enough_cops"] = "Du kan inte göra detta just nu",
+        ["used"] = "Någon annan har redan varit här...",
+        ["initiate_robbery"] = "Du har inte startat rånet än!",
+        ["level"] = "Det här verkar vara riktigt svårt för dig...",
+        ["wrong_code"] = "Fel lösenord",
+        ["permission"] = "Du har inte tillåtelse att göra detta",
+        ["glitch"] = "Bra försök...",
+        ["weapon"] = "Ditt vapen är för svagt",
+        ["missing_bag"] = "Du saknar en väska, hur ska du kunna få med dig allt?",
+        ["dangerous"] = "Det är väldigt farligt att göra detta just nu!",
+        ["cooldown"] = "Du behöver vänta en liten stund innan du försöker igen!",
+    },
+
+    success = {
+        ["lasers_down"] = "Några av lasrarna blev avaktiverade",
+        ["unlocked_keypad"] = "Åtkomst beviljad",
+        ["code_found"] = "Du hittade koden!",
+        ["cut_wires"] = "Du lyckades klippa kablarna!",
+        ["installed"] = "Installation lyckad!",
+        ["door_unlocked"] = "Dörren öppnades!",
+        ["bonus_item"] = "Du hittade ett bonusföremål!",
+        ["found_password"] = "Du hittade lösenordet!",
+        ["smoked"] = "Lasrarna är nu synliga!",
+        ["installed_virus"] = "Virus installerat!",
+    },
+}
+-- Everything was translated by Project X Team translator Greken!

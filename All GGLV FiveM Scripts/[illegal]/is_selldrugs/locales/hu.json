@@ -1,0 +1,289 @@
+{
+  "client": {
+    "target_buy_subscription": "Vásároljon $%s előfizetést",
+    "modal_buy_subscription": "Biztos, hogy $%s terméket szeretne vásárolni %s %s áron?",
+    "modal_mole_name": "Anyajegy",
+    "target_buy_phone": "Vásároljon Trap Phone $%s",
+    "modal_buy_phone": "Biztos, hogy Trap Phone-t szeretne vásárolni $%s áron?",
+    "phone_mole_buy_message": "'sup, tájékoztatni foglak, ha zsaruk jelennek meg a környékemen. ",
+    "notify_set_waypoint": "Beállította a GPS-t",
+    "target_retail_sell_drugs": "Javasoljon gyógyszereket",
+    "notify_exit_vehicle": "Ki kell szállnia a járműből.",
+    "notify_wholesale_info": "Nagyon közel van a találkozási ponthoz, ha elköltözik - lemondja a találkozót.",
+    "notify_wholesale_info2": "Ha bármilyen fegyvert kihúz az ügyféllel a találkozási területen, azt átverési kísérletként fogja fel.",
+    "notify_wholesale_fail_weapon": "Az ügyfél csalásnak vette. ",
+    "target_wholesale_exchange": "Folytassa a cserét",
+    "notify_wholesale_fail_drug": "Nincs elég a megadott gyógyszerből, az ügyfél csalásnak vette. ",
+    "notify_wholesale_fail_distance": "Lemondta a találkozót az ügyféllel, tisztelete %s-kal csökken.",
+    "notify_wholesale_enemy_dead": "Vegye ki a pénzt az ügyféltől, mielőtt a rendőrség megérkezik.",
+    "target_wholesale_steal_money": "Ellopni a pénzt",
+    "randomTexts": {
+      "phone_mole_message": [
+        "Egy disznó járőrözik a környéken, vigyázzon a hátára!",
+        "Fel a fejjel, egy zsaru van a közelben, légy éber!",
+        "Vigyázat, disznó van a környéken, vigyázzatok!",
+        "Vigyázz, szösz van a blokkon, légy éles!",
+        "Fel a fejjel, van egy ötös a közelben, légy résen!"
+      ]
+    }
+  },
+  "server": {
+    "command_selldrugs_description": "A gyógyszerértékesítés engedélyezéséért/letiltásáért felelős parancs",
+    "command_selldrugs_error": "A megadott azonosítóval rendelkező játékos nem létezik.",
+    "command_checkstats_description": "Az adott játékos gyógyszereladási statisztikáinak ellenőrzéséért felelős parancs",
+    "command_checkstats_arg1_desc": "Játékos azonosító",
+    "command_checkstats_notify": "Ellenőrzés: <span>%s</span>,<br><br> Tisztelet: <span>%s</span>,<br> Eladói készség: <span>%s</span>,<br>Vakondszerető: %s<br>Vakond Bűnöző: %s<br>Mole Professional: %s",
+    "command_checkstats_webhook_title": "Játékos statisztikák ellenőrzése",
+    "command_checkstats_webhook_desc": "<@%s> (**%s, %s**) ellenőrzi a játékos statisztikáit <@%s> (**%s, %s**).",
+    "command_addrespect_desc": "A parancs, amely felelős a hírnévpontok hozzáadásáért egy kiválasztott játékos drogértékesítése során",
+    "command_addrespect_notify": "Hozzáteszi a tiszteletet: <span>%s</span>, <br><br>Hozzáadás után megvan <span>%s</span> tisztelet pontokat.",
+    "command_addrespect_notify2": "Az adminisztrátor tiszteletpontokat adott Önnek.  <span>%s</span> tisztelet pontokat.",
+    "command_addrespect_webhook_desc": "<@%s> (**%s, %s**) %s tiszteletpontot adott hozzá <@%s> (**%s, %s**).",
+    "command_addrespect_arg2_desc": "A hozzáadandó hírnévpontok száma",
+    "command_removerespect_desc": "Az a parancs, amely felelős a hírnévpontok levonásáért egy kiválasztott játékos drogértékesítése során",
+    "command_removerespect_notify": "Levonja a tiszteletet: <span>%s</span>, <br><br>Kivonás után megvan <span>%s</span> tisztelet pontokat.",
+    "command_removerespect_notify2": "Az adminisztrátor levonta a tiszteletpontokat.  <span>%s</span> tisztelet pontokat.",
+    "command_removerespect_webhook_desc": "<@%s> (**%s, %s**) %s tiszteletpontot vont le ebből <@%s> (**%s, %s**).",
+    "command_removerespect_args2_desc": "A levonandó hírnévpontok száma",
+    "command_addskill_desc": "Az a parancs, amely a kiválasztott játékosnak adott kábítószer-értékesítésben ügyességi pontok hozzáadásáért felelős",
+    "command_addskill_notify": "Képességpontokat ad hozzá: <span>%s</span>, <br><br>Hozzáadás után megvan <span>%s</span> képességpontok.",
+    "command_addskill_notify2": "A rendszergazda készségpontokat adott hozzád.  <span>%s</span> képességpontok.",
+    "command_addskill_webhook_desc": "<@%s> (**%s, %s**) %s képességpontot adott a játékosnak <@%s> (**%s, %s**).",
+    "command_addskill_arg2_desc": "A hozzáadandó képességpontok száma",
+    "command_removeskill_desc": "Az a parancs, amely felelős a képzettségi pontok levonásáért a kiválasztott játékos drogértékesítése során",
+    "command_removeskill_notify": "Képességpontok levonása: <span>%s</span>, <br><br>Kivonás után megvan <span>%s</span> képességpontok.",
+    "command_removeskill_notify2": "Az adminisztrátor levonta a képzettségi pontjaidat.  <span>%s</span> képességpontok.",
+    "command_removeskill_webhook_desc": "<@%s> (**%s, %s**) %s képességpontot vont le ebből <@%s> (**%s, %s**).",
+    "command_removeskill_arg2_desc": "A kivonandó képességpontok száma",
+    "command_addMole_desc": "A kiválasztott játékos megfigyelőjének felvételéért felelős parancs",
+    "command_addMole_notify": "Megfigyelő kategória <span>%s</span> nem létezik.",
+    "command_addMole_notify2": "Követő <span>%s</span> nem létezik a megadott kategóriában.",
+    "command_addMole_notify3": "Előfizetések hozzáadása: <span>%s</span>, <br><br>Előfizetés érkezett innen <span>%s</span>: <span>%s</span> ig érvényes <span>%s</ span>.",
+    "command_addMole_notify4": "Ön előfizetést kapott a következőre <span>%s</span>: <span>%s</span> az Adminisztrátortól.  <span>%s</span>.",
+    "command_addMole_webhook_desc": "<@%s> (**%s, %s**) feliratkozott a következőre: %s: %s player <@%s> (**%s, %s**).",
+    "command_addMole_arg2_desc": "Az Observer típus a config.lua fájlban található",
+    "command_addMole_arg3_desc": "Az Observer neve a config.lua-ban található",
+    "command_removeMole_notify": "A <span>%s</span> megfigyelő kategória nem létezik.",
+    "command_removeMole_notify2": "A játékosnak nincs követője: <span>%s</span>.",
+    "command_removeMole_notify3": "Előfizetések törlése: <span>%s</span>, <br><br>Elveszett előfizetés a következőre <span>%s</span>: <span>%s</span>.",
+    "command_removeMole_notify4": "A rendszergazda lemondta az előfizetését a következőre: <span>%s</span>: <span>%s</span>.",
+    "command_removeMole_webhook_desc": "<@%s> (**%s, %s**) eltávolította %s előfizetését: %s játékos <@%s> (**%s, %s**).",
+    "command_removeMole_desc": "A kiválasztott játékos megfigyelőjének eltávolításáért felelős parancsnokság",
+    "notify_subscription_ends": "Az Ön előfizetése a <span>%s</span> éppen lejárt.",
+    "notify_wholesale_time": "Az idegen <span>%s</span> nem vár tovább, és visszavonta az ajánlatát. ",
+    "notify_mole_error_police": "Tisztként nem vásárolhat előfizetést.",
+    "notify_mole_success": "Ön előfizetést vásárolt a következőtől: <span>%s</span> nak nek <span>%s</span>. ",
+    "mole_buy_webhook_title": "Előfizetések",
+    "mole_buy_webhook_desc": "<@%s> (**%s, %s**) előfizetést vásárolt a következőtől: %s: %s érvényes: %s.",
+    "mole_buy_notify": "Nincs elég készpénzed, hiányzol <span>$%s</span>.",
+    "mole_buy_notify2": "Túl alacsony a tiszteleted, hiányzol <span>%s</span>.",
+    "mole_buy_notify3": "Aktív előfizetése van a következőtől: <span>%s</span> nak nek <span>%s</span>.",
+    "notify_traphone_error_police": "Nem vásárolhat Trap Phone-t tisztként.",
+    "notify_traphone_success": "A Trap Phone-t a következőért vásárolta meg <span>$%s</span>.",
+    "traphone_buy_webhook_desc": "<@%s> (**%s, %s**) Trap Phone-t vásárolt.",
+    "traphone_buy_notify": "Nincs elég készpénzed, hiányzol <span>$%s</span>.",
+    "print_retail_status": "Érvénytelen formátum: %s, szám/játékosazonosító szükséges!",
+    "print_retail_status2": "A megadott %s lejátszó nem érhető el, vagy ezt nem tudja végrehajtani az RCON-on keresztül.",
+    "notify_retail_status": "Nincs elég rendőr kiskereskedelmi vállalkozás indításához, hiányzik <span>%s</span>.",
+    "notify_retail_status2": "Nincsenek gyógyszereid.",
+    "notify_retail_status3": "Elkezdtél drogot árulni. ",
+    "notify_retail_status4": "Abbahagytad a drogok árusítását.",
+    "notify_retail_police": "Nincs elég rendőr a kiskereskedelmi értékesítés folytatásához, hiányzik <span>%s</span>.",
+    "notify_retail_error": "Nincs a kínálatában a gyógyszer.",
+    "notify_retail_error2": "Nincs annyi gyógyszered a kínálatban.",
+    "notify_retail_error3": "Ugyanolyan vagy magasabb összeget ajánlott fel.",
+    "notify_retail_sell_success": "Sikeresen eladtad <span>%s</span> számára <span>$%s</span>.",
+    "retail_sell_webhook_title": "Kiskereskedelem",
+    "retail_sell_webhook_desc": "<@%s> (**%s, %s**) eladta %s $%s áron.",
+    "notify_wholesale": "Megérkezett az úticélhoz, menjen az ügyfél felé.",
+    "notify_wholesale2": "Elköltözött a találkozó helyéről, azt törölték, és levonták a statisztikáit.",
+    "wholesale_webhook_title": "Nagyker",
+    "wholesale_webhook_desc": "<@%s> (**%s, %s**) túl messzire tévedt a találkozási ponttól %s-szal.",
+    "notify_wholesale3": "Megtámadtál egy ismeretlen kereskedőt, valószínűleg a potenciális ügyfeleid értesülnek róla. ",
+    "wholesale_webhook_desc2": "<@%s> (**%s, %s**) megtámadta %s egy értekezleten.",
+    "notify_wholesale4": "Az ügyfél elvitte a <span>$%s</span> veled volt.",
+    "wholesale_webhook_desc3": "<@%s> (**%s, %s**) %s kirabolta $%s miatt.",
+    "notify_wholesale5": "Elloptad <span>$%s</span> egy vásárlótól, fuss el, mielőtt a tisztek ideérnek!",
+    "wholesale_webhook_desc4": "<@%s> (**%s, %s**) elrabolta %s $%s-t.",
+    "notify_wholesale6": "Nincs rajtad a felkínált gyógyszer, elpazaroltad a vásárló idejét. ",
+    "notify_wholesale7": "Nincs elég rajtad a felkínált gyógyszer, elpazaroltad a vásárló idejét. ",
+    "notify_wholesale8": "Sikeresen eladtad <span>%s</span> számára <span>$%s</span>.",
+    "wholesale_webhook_desc5": "<@%s> (**%s, %s**) %s eladta %sért.",
+    "randomTexts": {
+      "phone_mole_first_message": [
+        "Szia, itt dolgozom: %s. ",
+        "Szia, itt dolgozom: %s. ",
+        "Szia, a %s-on vagyok. ",
+        "Hé, itt vagyok %s. ",
+        "Mi újság, itt vagyok: %s. "
+      ]
+    }
+  },
+  "html": {
+    "dialog_inventory_title": "FELSZERELÉS",
+    "phone_messages_title": "üzenetek",
+    "phone_ogApp_title": "OG App",
+    "phone_settings_title": "Beállítások",
+    "phone_ogApp_respect_title": "Tisztelet",
+    "phone_ogApp_selling_skill_title": "Értékesítési készség",
+    "phone_ogApp_active_subscriptions_title": "Aktív előfizetések",
+    "phone_setting_alerts": "Figyelmeztetések",
+    "phone_setting_alerts_sound": "Figyelmeztető hang",
+    "dialog_respect_tooltip": "Tisztelet: %s / %s",
+    "dialog_sales_skill_tooltip": "Értékesítési ismeretek: %s / %s",
+    "dialog_stranger_title": "IDEGEN",
+    "notify_input_wrong": "Kérem adjon meg egy valós értéket.",
+    "notify_inventory_select": "Válasszon ki egy elemet a készletéből",
+    "phone_call_stranger_title": "Idegen",
+    "phone_call_message_end": "Elindított egy beszélgetést, amely %s másodpercig tartott",
+    "phone_message_input_drug_amount": "Adja meg, mennyi...",
+    "phone_message_input_price": "Állítsa be az egységárat...",
+    "phone_alert_player": "Te: %s",
+    "notify_settings_error": "Várnia kell 5 másodpercet, mielőtt ismét megváltoztatná a beállításokat.",
+    "randomTexts": {
+      "dialog_answer_sale_offer": [
+        "Eladóm: %s"
+      ],
+      "dialog_npc_first_message": [
+        "Mit akarsz?",
+        "Mit keresel?",
+        "Hogyan segíthetek ebben a pillanatban?"
+      ],
+      "dialog_npc_take": [
+        "Rendben, veszek %s darabot %s-ból. ",
+        "Rendben, szeretnék rendelni %s egységet %s-ból. ",
+        "Elmegyek %s darab %s-ért. "
+      ],
+      "dialog_answer_start_normal": [
+        "Kalandra készülsz?",
+        "Van kedved valami izgalmashoz?",
+        "Érdekel valami újat és izgalmasat kipróbálni?"
+      ],
+      "dialog_answer_start_exit": [
+        "Csak átmentem, köszönöm.",
+        "Tulajdonképpen azt hiszem, ezúttal túlteszem, köszönöm.",
+        "Átgondoltam – talán máskor. "
+      ],
+      "dialog_npc_whatYouHave": [
+        "Milyen árukat kínál ma?",
+        "Meg tudnád mutatni, hogy jelenleg milyen termékek vásárolhatók meg?",
+        "Kíváncsi vagyok a jelenlegi választásodra. "
+      ],
+      "dialog_answer_whatYouHave_exit": [
+        "Ha jobban belegondolok, most nincs semmim.",
+        "Igazából, újragondolva, jelenleg nincs mit ajánlanom.",
+        "Most vettem észre, hogy jelenleg nincs elérhető termékem."
+      ],
+      "dialog_answer_iWillTake_write": [
+        "Állítsa be az egységárat...",
+        "A darabonkénti ár...",
+        "Minden egység kerül Önnek..."
+      ],
+      "dialog_answer_iWillTake_normal": [
+        "Hadd mutassak még valamit.",
+        "Mit szólnál, ha bemutatnám egy másik termékünket?",
+        "Esetleg érdekelne egy másik termékünk?"
+      ],
+      "dialog_answer_iWillTake_exit": [
+        "Meggondoltam magam, ma nem adom el.",
+        "Igazából ma nem adom el.",
+        "Úgy döntöttem, ma nem adom el."
+      ],
+      "dialog_npc_giveMeBetterOption": [
+        "Adjatok jobb árat, ez nekem nem jön be.",
+        "Ez az ár kissé magasnak tűnik. ",
+        "Reálisabb árat keresek. "
+      ],
+      "dialog_npc_noThanks": [
+        "Továbbítom, nem tűnik jó üzletnek.",
+        "Azt hiszem visszautasítom, nekem nem jön be az ár.",
+        "Nem, köszönöm, az üzlet nem egészen az, amit keresek."
+      ],
+      "dialog_answer_noThanks_exit": [
+        "A veszteséged, talán legközelebb.",
+        "Ez szégyen. ",
+        "Sajnálattal hallom. "
+      ],
+      "dialog_npc_sellSuccess": [
+        "Érdekel az ajánlatod. ",
+        "Ez jól hangzik nekem. ",
+        "Elfogadom ezeket a feltételeket. "
+      ],
+      "dialog_answer_sellSuccess_normal": [
+        "Nagyszerű, öröm üzletelni veled.",
+        "Kiváló, örülök, hogy sikerült megegyeznünk.",
+        "Fantasztikus, öröm volt veled ezt megszervezni."
+      ],
+      "dialog_npc_sellFail": [
+        "Ez az ár nekem nem jön be. ",
+        "Nem tudok egyetérteni ezzel az árral. ",
+        "Az ár túl magas nekem. "
+      ],
+      "dialog_answer_exit": [
+        "Kár, talán máskor.",
+        "Sajnáljuk, hogy nem tudtuk megvalósítani. ",
+        "Értem, remélem, máskor is tudunk üzletet kötni."
+      ],
+      "phone_message_accept_offer": [
+        "Rendben, átveszek %s mennyiséget.",
+        "Rendben, %s egységre várok.",
+        "Elfogadom, hogy %s összeget vásárolok."
+      ],
+      "phone_message_gps": [
+        "Jelenj meg itt.",
+        "Találkozzunk ezen a helyen.",
+        "Gyere a megadott címre."
+      ],
+      "phone_message_no_places": [
+        "Azonban nem kötünk alkut, valami elromlott az oldalamon.",
+        "Sajnos ki kell mondanom ezt az üzletet, volt egy probléma a részemről.",
+        "Változtak a terveim, és nem tudom folytatni az üzletet, elnézést a kellemetlenségért."
+      ],
+      "phone_message_drug_amount": [
+        "%s mennyiségem van.",
+        "A készletem %s egység.",
+        "Jelenleg %s mennyiséget tartok."
+      ],
+      "phone_message_drug_amount_fail": [
+        "Vicces vagy, kölyök, azt hiszed, hogy nekem ennyire lesz szükségem.",
+        "Biztos viccelsz ezzel az összeggel.",
+        "Ez jó, de vegyük komolyan a mennyiséget."
+      ],
+      "phone_message_price_question": [
+        "Mennyit kérsz egy mennyiségért?",
+        "Mennyi az egységára?",
+        "Meg tudod mondani az egyes mennyiségek költségét?"
+      ],
+      "phone_message_price_answer": [
+        "$%s egy mennyiségért.",
+        "Az egyes mennyiségek ára %s $.",
+        "Minden egység %s $-ba kerül."
+      ],
+      "phone_message_call": [
+        "Rendben, hívjon további információért.",
+        "Rendben, hívjon, ha van még megbeszélnivaló.",
+        "Jól hangzik. "
+      ],
+      "phone_message_price_fail": [
+        "Ezen az áron? ",
+        "Ez az ár számomra megszakító. ",
+        "Semmi esetre sem fizetek ennyit. "
+      ],
+      "phone_message_price_negotiation": [
+        "Ez az ár nem jó nekem – adj jobb ajánlatot.",
+        "Túl drága. Tudsz ennél jobbat ajánlani?",
+        "Ez az ár nem működik – mi a legjobb árad?"
+      ],
+      "phone_message_price_no_req": [
+          "Igazából meggondoltam magam. Bocs a kellemetlenségért.",
+          "Mégsem kérem. Elnézést.",
+          "Tudod mit? Hagyd. Nem akartam zavarni."
+      ],
+      "phone_message_price_lower_before": [
+          "Ez több, mint amit először mondtál. Viccelsz? Takarodj.",
+          "Most komolyan emelted az árat? Ne szórakozz velem.",
+          "Szerinted ez vicces? Felment az ár? Húzz el."
+      ]
+    }
+  }
+}

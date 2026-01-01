@@ -1,0 +1,72 @@
+---@class serverBridge
+---@field getPlayer fun(src: integer | number): table | boolean function to get the player object
+---@field getPlayerMoney fun(src: integer | number): number function to get the player's money
+---@field removePlayerMoney fun(src: integer | number, amount: integer | number) function to remove money from the player
+---@field getPlayerIdentifier fun(src: integer | number): string | nil function to get the player identifier majory the citizenid
+---@field addPlayerMoney fun(src: integer | number, amount: number) function give money to a player
+---@field getPlayerFullname fun(src: number): string function to get the player's full name
+---@field addPlayerHunger fun(src: number, hunger: number) function to add player's hunger
+---@field giveOfflinePlayerMoney fun(identifier: string, amount: number) function to give money to an offline player
+local bridge = {}
+
+bridge.getPlayer = function(src)
+    return exports.ox_core:GetPlayer(src)
+end
+
+bridge.getPlayerMoney = function(src)
+    local player = bridge.getPlayer(src)
+    return player and player.getAccount('cash') or 0
+end
+
+bridge.removePlayerMoney = function(src, amount)
+    local player = bridge.getPlayer(src)
+    if player then
+        player.removeAccountMoney('cash', amount, 'Item bought at hunting store')
+    end
+end
+
+bridge.addPlayerMoney = function(src, amount)
+    local player = bridge.getPlayer(src)
+    if player then
+        player.addAccountMoney('cash', amount, 'Hunting sell item')
+    end
+end
+
+bridge.getPlayerIdentifier = function(src)
+    local player = bridge.getPlayer(src)
+    return player and player.citizenid or nil
+end
+
+bridge.getPlayerFullname = function(src)
+    local player = bridge.getPlayer(src)
+    if not player then return '' end
+    local charinfo = player.get('charinfo')
+    return ("%s %s"):format(charinfo.firstname, charinfo.lastname)
+end
+
+bridge.addPlayerHunger = function(src, hunger)
+    local player = bridge.getPlayer(src)
+    if player then
+        local state = Player(src).state
+        state.hunger = (state.hunger or 0) + hunger
+        player.setMetadata('hunger', state.hunger)
+    end
+end
+
+bridge.giveOfflinePlayerMoney = function(identifier, amount)
+    local player = exports.ox_core:GetOfflinePlayer(identifier)
+    if player then
+        local money = player.getAccount('bank') or 0
+        player.setAccountMoney('bank', money + amount)
+        player.save()
+    else
+        local row = MySQL.query.await('SELECT accounts FROM players WHERE citizenid = ?', { identifier })
+        if not row or not row[1] then return end
+
+        local accounts = json.decode(row[1].accounts or '{}')
+        accounts.bank = (accounts.bank or 0) + amount
+        MySQL.update('UPDATE players SET accounts = ? WHERE citizenid = ?', { json.encode(accounts), identifier })
+    end
+end
+
+return bridge

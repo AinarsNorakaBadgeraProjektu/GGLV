@@ -1,0 +1,1 @@
+import{j as e}from"./index-Dk_qwhST.js";const t=()=>e.jsx("div",{children:"Contenido del Widget Two de Stats"}),i={name:"Widget Two",description:"Este es el primer widget de la categoría Stats.",component:e.jsx(t,{})};export{i as widget};

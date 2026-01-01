@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <canvas id='canvas'></canvas>
+        <canvas id='o2canvas'></canvas>
+
+        <div class="infobox">
+            <div class="topbar"><span class="text">BPM</span></div>
+            <span class="value1">0</span> 
+        </div>
+
+        <div class="infobox2">
+            <div class="topbar"><span class="text2">BP mmHg</span></div>
+            <span class="value2">0/0</span> 
+        </div>
+
+        <div class="infobox3">
+            <div class="topbar"><span class="text3">spO2</span></div>
+            <span class="value3">0%</span> 
+        </div>
+
+        <div class="infobox4">
+            <div class="topbar"><span class="text4">Temp °C</span></div>
+            <span class="value4">0.0°C</span> 
+        </div>
+
+        <div class="infobox5">
+            <span class="value5">ICU</span> 
+        </div>
+
+        <div class="canvaswrapper"></div>
+        <div class="canvaswrapper2"></div>
+        <div class="titlebar">ECG</div>
+        
+
+    </body>
+
+<style>
+    body{
+        font-family: Roboto;
+    }
+    .titlebar{
+        width: 750px;
+        height: 40px;
+        background-color: rgb(24, 29, 44);
+        position: absolute;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+	#canvas{
+		position: absolute;
+		top: 0px;
+		left: 100px;
+		width: 650px;
+		height: 620px;
+	}
+    #o2canvas{
+		position: absolute;
+		top: 0px;
+		left: 100px;
+		width: 650px;
+		height: 620px;
+	}
+	#buttons{
+		position: absolute;
+		top:10px;
+		left:2px;
+		width:calc(100% - 6px);
+		height: 20px;
+		padding: 2px;
+	}
+    .topbar{
+        width: 187px;
+        height: 30px;
+        background-color: rgb(60, 72, 109);
+        font-size: 25px;
+    }
+    .canvaswrapper{
+        width:530px;
+        height:225px;
+        left: 197px;
+        top:48px;
+        border: 5px solid rgb(122, 122, 122);
+        position: absolute;
+    }
+    .canvaswrapper2{
+        width:530px;
+        height:175px;
+        left: 197px;
+        top: 276px;
+        border: 5px solid rgb(126, 126, 126);
+        position: absolute;
+    }
+
+    .text{
+        margin-left: 25px;
+        position: absolute;
+    }
+    .text2{
+        margin-left: -35px;
+        position: absolute;
+    }
+    .text3{
+        margin-left: 25px;
+        position: absolute;
+    }
+    .text4{
+        margin-left: -10px;
+        position: absolute;
+    }
+
+    .value1{
+        margin-top: -5px;
+        margin-left: -50px;
+        position: absolute;
+    }
+    .value2{
+        margin-top: 13px;
+        margin-left: -87px;
+        position: absolute;
+    }
+    .value3{
+        margin-top: -5px;
+        margin-left: -70px;
+        position: absolute;
+    }
+    .value5{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+
+
+    .infobox{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 185px;
+        height: 115px;
+        /* border: 5px solid white; */
+        padding: 2px;
+        background-color: rgb(24, 29, 44);
+        color: white;
+        font-size: 80px;
+        text-align: center;
+        color: lime;
+        margin-left: 8px;
+        margin-top: 48px;
+    }
+
+    .infobox2{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 185px;
+        height: 115px;
+        /* border: 5px solid; */
+        padding: 2px;
+        background-color: rgb(24, 29, 44);
+        color: red;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 167px;
+        margin-left: 8px;
+    }
+
+    .infobox3{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 185px;
+        height: 115px;
+        /* border: 5px solid; */
+        padding: 2px;
+        background-color: rgb(24, 29, 44);
+        color: rgb(100, 172, 255);
+        font-size: 80px;
+        text-align: center;
+        margin-top: 285px;
+        margin-left: 8px;
+    }
+
+    .infobox4{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 185px;
+        height: 115px;
+        /* border: 5px solid; */
+        padding: 2px;
+        background-color: rgb(24, 29, 44);
+        color: orange;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 403px;
+        margin-left: 8px;
+    }
+
+    .infobox5{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 185px;
+        height: 78px;
+        /* border: 5px solid; */
+        padding: 2px;
+        background-color: rgb(16, 19, 27);
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 520px;
+        padding-top: 15px;
+        /* border: 3px solid; */
+        margin-left: 8px;
+    }
+
+</style>
+<script src="stationary.js" type="text/javascript"></script>
+</html>
